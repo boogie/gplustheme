@@ -7,14 +7,13 @@ for Google Plus users.
 
 #Requirements
 
-The theme has been tested only in Chrome. I'll plan a Firefox/Gecko support as well, I guess it's
-already fine with it.
+The theme has been tested in Chrome and Firefox.
 
 #The plan
 
 I would like to cover all the different layouts of Google Plus, however I know that I won't have
-time for that. This is my very first github project, however pull requests, ideas, recommendations
-are welcome. I'll try to respond all of them.
+time for that. This is my very first github project, pull requests, ideas, recommendations are
+welcome. I'll try to respond all of them.
 
 #About me
 

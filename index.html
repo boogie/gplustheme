@@ -4,7 +4,8 @@
   <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
   <meta name="author" content="Andras Barthazi - https://github.com/boogie" />
   <title>Google Plus theme</title>
-  <link rel="stylesheet" href="gplus.css" />
+  <link rel="stylesheet" href="stylesheets/gplus.css" />
+  <link rel="stylesheet" href="stylesheets/jquery.tipsy.css" />
 </head>
 <body id="application">
   <div id="main" class="centered">
@@ -26,10 +27,10 @@
       <div class="container">
         <h1 id="site-logo">Google+</h1>
         <ul id="top-tabs">
-          <li id="top-tab-home"><a href="#" class="button left">Home</a></li>
-          <li id="top-tab-photos"><a href="#" class="button middle">Photos</a></li>
-          <li id="top-tab-profile"><a href="#" class="button middle">Profile</a></li>
-          <li id="top-tab-circles"><a href="#" class="button right">Circles</a></li>
+          <li id="top-tab-home" class="active"><a href="#" title="Home" class="button left w-tip"><span>Home</span></a></li>
+          <li id="top-tab-photos"><a href="#" title="Photos" class="button middle w-tip"><span>Photos</span></a></li>
+          <li id="top-tab-profile"><a href="#" title="Profile" class="button middle w-tip"><span>Profile</span></a></li>
+          <li id="top-tab-circles"><a href="#" title="Circles" class="button right w-tip"><span>Circles</span></a></li>
         </ul>
         <div id="top-search">
           <input id="top-search-input" class="focusable" placeholder="Find people" />
@@ -166,5 +167,8 @@
     </div>
 
   </div>
+  <script src="javascripts/jquery.min.js"></script>
+  <script src="javascripts/jquery.tipsy.js"></script>
+  <script src="javascripts/gplus.js"></script>
 </body>
 </html>
