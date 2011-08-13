@@ -38,7 +38,7 @@ textarea::--webkit-input-placeholder {
   color: darkGray;
 }
 
-input, input[type="password"] {
+input, input[type="password"], textarea {
   -webkit-appearance: textfield;
   -webkit-box-sizing: content-box;
   border: 1px solid #d9d9d9;
@@ -211,6 +211,36 @@ header ul li.active a {
   color: #fff;
 }
 
+header #header-notifications a {
+  display: inline-block;
+  width: 19px;
+  height: 18px;
+  line-height: 18px;
+  overflow: hidden;
+  font-size: 11px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  padding: 0;
+  margin: 0 4px 0 7px;
+  background: #525152;
+  color: #999;
+  border: 1px solid #5A595a;
+  border-right-color: #525152;
+  border-bottom-color: #424542;
+  border-left-color: #525152;
+}
+header #header-notifications a.active {
+  background: #ce3421;
+  color: #fff;
+  border: 1px solid #d63421;
+  border-right-color: #ce3421;
+  border-bottom-color: #ad3829;
+  border-left-color: #ce3421;
+}
+
 #top {
   height: 61px;
   background: #f1f1f1;
@@ -266,21 +296,28 @@ header ul li.active a {
 #top #top-tabs #top-tab-circles a span {
   background-position: 0 -54px;
 }
+#top #top-tabs #top-tab-games a span {
+  background-position: 0 -72px;
+}
 #top #top-tabs #top-tab-home.active a span,
 #top #top-tabs #top-tab-home a:hover span {
-  background-position: 0 -72px;
+  background-position: 0 -90px;
 }
 #top #top-tabs #top-tab-photos.active a span,
 #top #top-tabs #top-tab-photos a:hover span {
-  background-position: 0 -90px;
+  background-position: 0 -108px;
 }
 #top #top-tabs #top-tab-profile.active a span,
 #top #top-tabs #top-tab-profile a:hover span {
-  background-position: 0 -108px;
+  background-position: 0 -126px;
 }
 #top #top-tabs #top-tab-circles.active a span,
 #top #top-tabs #top-tab-circles a:hover span {
-  background-position: 0 -126px;
+  background-position: 0 -144px;
+}
+#top #top-tabs #top-tab-games.active a span,
+#top #top-tabs #top-tab-games a:hover span {
+  background-position: 0 -162px;
 }
 
 #top #top-search {
@@ -365,12 +402,13 @@ header ul li.active a {
 }
 
 #content #new-message {
-  height: 30px;
   font-size: 13px;
-  height: 27px;
-  margin-top: 1px;
-  padding: 0 10px 0 6px;
   width: 510px;
+  height: 15px;
+  padding: 7px 8px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 #content .message {
