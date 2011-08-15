@@ -20,6 +20,7 @@ abbr {
 }
 
 input, textarea, keygen, select, button {
+  font: normal 13px arial, sans-serif;
   margin: 0;
   font: -webkit-small-control;
   color: initial;
@@ -212,7 +213,6 @@ header ul li.active a {
 }
 
 header #header-notifications a {
-  display: inline-block;
   width: 19px;
   height: 18px;
   line-height: 18px;
@@ -223,8 +223,9 @@ header #header-notifications a {
   border-radius: 2px;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
+  float: left;
   padding: 0;
-  margin: 0 4px 0 7px;
+  margin: 3px 4px 0 7px;
   background: #525152;
   color: #999;
   border: 1px solid #5A595a;
